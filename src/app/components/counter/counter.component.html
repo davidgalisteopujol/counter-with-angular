@@ -1,0 +1,20 @@
+<h1>{{counter.value}}</h1>
+
+<h2 class="mt-3">Setup</h2>
+<button type="button" class="btn btn-primary" (click)="startCounter()">Start</button>
+<button type="button" class="btn btn-primary" (click)="pauseCounter()">Pause</button>
+<button type="button" class="btn btn-primary" (click)="resetCounter()">Reset</button>
+
+<h2 class="mt-3">Count</h2>
+<button type="button" class="btn btn-primary" (click)="startCountUp()">Count Up</button>
+<button type="button" class="btn btn-primary" (click)="startCountDown()">Count Down</button>
+
+
+<h2 class="mt-3">Set to</h2>
+<input type="number" [(ngModel)]="counter.setTo">
+
+<h2 class="mt-3">Step</h2>
+<input type="number" [(ngModel)]="counter.step">
+
+
+{{counter.value}}{{counter | json}}
